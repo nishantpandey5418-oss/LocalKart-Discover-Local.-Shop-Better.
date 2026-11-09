@@ -1,0 +1,501 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explore quality products from LocalKart local businesses.">
+    <meta name="theme-color" content="#123d30">
+
+    <title>Explore Products | LocalKart</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/products.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <a href="./index.html" class="brand" aria-label="LocalKart Home">
+                <img src="./image/logo.png" alt="LocalKart" class="logo-img">
+            </a>
+
+            <input type="checkbox" id="menu-toggle" class="menu-check">
+
+            <label for="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="nav-links" id="main-navigation" aria-label="Main navigation">
+                <a href="./index.html">Home</a>
+                <a href="./products.html" class="active" aria-current="page">Products</a>
+                <a href="./product-details.html">Product Detail</a>
+                <a href="./stores.html">Stores</a>
+                <a href="./about.html">About Us</a>
+            </nav>
+
+            <a href="./about.html#contact" class="nav-cta">
+                Contact Us <span aria-hidden="true">↗</span>
+            </a>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="catalog-hero">
+            <div class="container catalog-hero-inner">
+
+                <div class="catalog-hero-copy">
+                    <p class="catalog-eyebrow">THE LOCAL COLLECTION</p>
+
+                    <h1>
+                        Good finds.<br>
+                        <span>Closer to home.</span>
+                    </h1>
+
+                    <p class="catalog-intro">
+                        Discover everyday essentials, unique finds and
+                        quality products from independent local businesses.
+                    </p>
+                </div>
+
+                <div class="catalog-side-note">
+
+                    <div class="catalog-note-image-wrap">
+                        <img
+                            src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1000&q=85"
+                            alt="A modern local retail store"
+                            class="catalog-note-image"
+                            loading="lazy">
+
+                        <span class="catalog-image-tag">SHOP LOCAL</span>
+                    </div>
+
+                    <div class="catalog-note-content">
+
+                        <p class="catalog-note-label">DISCOVER NEARBY</p>
+
+                        <h2>
+                            Local stores.<br>
+                            <span>Unique finds.</span>
+                        </h2>
+
+                        <p class="catalog-note-description">
+                            Find something special while supporting
+                            independent businesses in your community.
+                        </p>
+
+                        <a href="./stores.html" class="catalog-note-button">
+                            Explore Local Stores <span aria-hidden="true">↗</span>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SEARCH AND CATEGORY BAR -->
+        <section class="catalog-toolbar">
+            <div class="container">
+
+                <form class="catalog-search" action="./products.html" method="get" role="search">
+
+                    <span aria-hidden="true">⌕</span>
+
+                    <input
+                        type="search"
+                        name="search"
+                        placeholder="Search products, categories or stores..."
+                        aria-label="Search products">
+
+                    <button type="submit">Search ↗</button>
+                </form>
+
+                <nav class="catalog-categories" aria-label="Product categories">
+
+                    <a href="#all-products" class="category-pill selected">All Products</a>
+                    <a href="#fashion" class="category-pill">Fashion</a>
+                    <a href="#lifestyle" class="category-pill">Lifestyle</a>
+                    <a href="#home-decor" class="category-pill">Home &amp; Decor</a>
+                    <a href="#accessories" class="category-pill">Accessories</a>
+                    <a href="#footwear" class="category-pill">Footwear</a>
+
+                </nav>
+
+            </div>
+        </section>
+
+        <!-- PRODUCT CATALOG -->
+        <section class="catalog-section" id="all-products">
+            <div class="container">
+
+                <div class="catalog-heading">
+
+                    <div>
+                        <p class="catalog-eyebrow">CURATED FOR YOU</p>
+                        <h2>Explore products<span>.</span></h2>
+
+                        <p class="catalog-subtitle">
+                            Thoughtful picks from stores in your community.
+                        </p>
+                    </div>
+
+                    <div class="catalog-sort">
+                        <label for="sort-products">Sort by</label>
+
+                        <select id="sort-products" name="sort">
+                            <option value="featured">Featured</option>
+                            <option value="low-high">Price: Low to High</option>
+                            <option value="high-low">Price: High to Low</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="catalog-layout">
+
+                    <!-- CATEGORY SIDEBAR -->
+                    <aside class="catalog-sidebar">
+
+                        <div class="filter-heading">
+                            <h3>Categories</h3>
+                            <span aria-hidden="true">✳</span>
+                        </div>
+
+                        <a href="#all-products" class="filter-link active-filter">
+                            <span>All products</span>
+                            <span>06</span>
+                        </a>
+
+                        <a href="#fashion" class="filter-link">
+                            <span>Fashion</span>
+                            <span>01</span>
+                        </a>
+
+                        <a href="#lifestyle" class="filter-link">
+                            <span>Lifestyle</span>
+                            <span>01</span>
+                        </a>
+
+                        <a href="#home-decor" class="filter-link">
+                            <span>Home &amp; Decor</span>
+                            <span>01</span>
+                        </a>
+
+                        <a href="#accessories" class="filter-link">
+                            <span>Accessories</span>
+                            <span>01</span>
+                        </a>
+
+                        <a href="#footwear" class="filter-link">
+                            <span>Footwear</span>
+                            <span>02</span>
+                        </a>
+
+                        <div class="sidebar-divider"></div>
+
+                        <div class="sidebar-message">
+                            <span>LOCAL LOVE</span>
+
+                            <h3>Small stores.<br>Big stories.</h3>
+
+                            <p>
+                                Find something special and support a local business.
+                            </p>
+
+                            <a href="./stores.html">Meet the stores ↗</a>
+                        </div>
+
+                    </aside>
+
+                    <!-- PRODUCT GRID -->
+                    <div class="catalog-products">
+
+                        <article class="catalog-card" id="fashion">
+
+                            <a href="./product-details.html?product=handbag" class="catalog-image">
+                                <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=85" alt="Classic everyday handbag" loading="lazy">
+                                <span class="discount-label">15% OFF</span>
+                                <span class="image-arrow" aria-hidden="true">↗</span>
+                            </a>
+
+                            <div class="catalog-card-info">
+                                <p class="catalog-category">FASHION</p>
+                                <h3>Everyday Classic Handbag</h3>
+
+                                <p class="catalog-description">
+                                    A timeless everyday accessory with a clean,
+                                    versatile look.
+                                </p>
+
+                                <p class="catalog-store">
+                                    Sold by <strong>Urban Threads</strong>
+                                </p>
+
+                                <div class="catalog-card-bottom">
+                                    <div class="catalog-price">
+                                        ₹1,699 <del>₹1,999</del>
+                                    </div>
+
+                                    <a href="./product-details.html?product=handbag" class="view-product">
+                                        View Product <span>↗</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="catalog-card" id="lifestyle">
+
+                            <a href="./product-details.html?product=bottle" class="catalog-image">
+                                <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=800&q=85" alt="Reusable water bottle" loading="lazy">
+                                <span class="discount-label">10% OFF</span>
+                                <span class="image-arrow" aria-hidden="true">↗</span>
+                            </a>
+
+                            <div class="catalog-card-info">
+                                <p class="catalog-category">LIFESTYLE</p>
+                                <h3>Reusable Water Bottle</h3>
+
+                                <p class="catalog-description">
+                                    A practical companion for everyday routines
+                                    and outings.
+                                </p>
+
+                                <p class="catalog-store">
+                                    Sold by <strong>Home Harmony</strong>
+                                </p>
+
+                                <div class="catalog-card-bottom">
+                                    <div class="catalog-price">
+                                        ₹449 <del>₹499</del>
+                                    </div>
+
+                                    <a href="./product-details.html?product=bottle" class="view-product">
+                                        View Product <span>↗</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="catalog-card" id="footwear">
+
+                            <a href="./product-details.html?product=sneakers" class="catalog-image">
+                                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=85" alt="Everyday casual sneakers" loading="lazy">
+                                <span class="discount-label">20% OFF</span>
+                                <span class="image-arrow" aria-hidden="true">↗</span>
+                            </a>
+
+                            <div class="catalog-card-info">
+                                <p class="catalog-category">FOOTWEAR</p>
+                                <h3>Everyday Casual Sneakers</h3>
+
+                                <p class="catalog-description">
+                                    Comfort-inspired footwear for everyday
+                                    adventures.
+                                </p>
+
+                                <p class="catalog-store">
+                                    Sold by <strong>City Walk Store</strong>
+                                </p>
+
+                                <div class="catalog-card-bottom">
+                                    <div class="catalog-price">
+                                        ₹1,599 <del>₹1,999</del>
+                                    </div>
+
+                                    <a href="./product-details.html?product=sneakers" class="view-product">
+                                        View Product <span>↗</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="catalog-card" id="home-decor">
+
+                            <a href="./product-details.html?product=decor" class="catalog-image">
+                                <img src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=800&q=85" alt="Decorative home interior piece" loading="lazy">
+                                <span class="discount-label">12% OFF</span>
+                                <span class="image-arrow" aria-hidden="true">↗</span>
+                            </a>
+
+                            <div class="catalog-card-info">
+                                <p class="catalog-category">HOME &amp; DECOR</p>
+                                <h3>Handcrafted Home Decor</h3>
+
+                                <p class="catalog-description">
+                                    Bring a warm, thoughtful touch to your
+                                    living space.
+                                </p>
+
+                                <p class="catalog-store">
+                                    Sold by <strong>Home Harmony</strong>
+                                </p>
+
+                                <div class="catalog-card-bottom">
+                                    <div class="catalog-price">
+                                        ₹879 <del>₹999</del>
+                                    </div>
+
+                                    <a href="./product-details.html?product=decor" class="view-product">
+                                        View Product <span>↗</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="catalog-card" id="accessories">
+
+                            <a href="./product-details.html?product=watch" class="catalog-image">
+                                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=85" alt="Classic wristwatch" loading="lazy">
+                                <span class="discount-label">20% OFF</span>
+                                <span class="image-arrow" aria-hidden="true">↗</span>
+                            </a>
+
+                            <div class="catalog-card-info">
+                                <p class="catalog-category">ACCESSORIES</p>
+                                <h3>Classic Wristwatch</h3>
+
+                                <p class="catalog-description">
+                                    A simple, refined accessory for everyday wear.
+                                </p>
+
+                                <p class="catalog-store">
+                                    Sold by <strong>Urban Threads</strong>
+                                </p>
+
+                                <div class="catalog-card-bottom">
+                                    <div class="catalog-price">
+                                        ₹1,599 <del>₹1,999</del>
+                                    </div>
+
+                                    <a href="./product-details.html?product=watch" class="view-product">
+                                        View Product <span>↗</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="catalog-card" id="footwear-extra">
+
+                            <a href="./product-details.html?product=footwear" class="catalog-image">
+                                <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=85" alt="Fashion footwear" loading="lazy">
+                                <span class="discount-label">10% OFF</span>
+                                <span class="image-arrow" aria-hidden="true">↗</span>
+                            </a>
+
+                            <div class="catalog-card-info">
+                                <p class="catalog-category">FOOTWEAR</p>
+                                <h3>Everyday Fashion Footwear</h3>
+
+                                <p class="catalog-description">
+                                    Easy-to-style footwear for everyday looks.
+                                </p>
+
+                                <p class="catalog-store">
+                                    Sold by <strong>City Walk Store</strong>
+                                </p>
+
+                                <div class="catalog-card-bottom">
+                                    <div class="catalog-price">
+                                        ₹899 <del>₹999</del>
+                                    </div>
+
+                                    <a href="./product-details.html?product=footwear" class="view-product">
+                                        View Product <span>↗</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOCAL BUSINESS CTA -->
+        <section class="catalog-cta">
+            <div class="container catalog-cta-inner">
+
+                <div>
+                    <p class="catalog-eyebrow">MADE FOR LOCAL BUSINESS</p>
+
+                    <h2>
+                        Your favourite local store<br>
+                        deserves to be discovered.
+                    </h2>
+
+                    <p>
+                        Explore independent businesses and discover the
+                        people behind the products.
+                    </p>
+                </div>
+
+                <a href="./stores.html" class="catalog-cta-button">
+                    Explore Local Stores ↗
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="footer-main">
+
+                <div class="footer-brand">
+                    <a href="./index.html" aria-label="LocalKart Home">
+                        <img src="./image/logo.png" alt="LocalKart Logo" class="footer-logo" loading="lazy">
+                    </a>
+
+                    <p>
+                        Discover local businesses.<br>
+                        Shop with purpose.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Explore</h3>
+                    <a href="./index.html">Home</a>
+                    <a href="./products.html">Products</a>
+                    <a href="./product-details.html">Product Detail</a>
+                    <a href="./stores.html">Stores</a>
+                    <a href="./about.html">About Us</a>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Get in Touch</h3>
+                    <a href="./about.html#contact">Contact Us</a>
+                    <a href="./about.html#mission">Our Mission</a>
+                    <a href="./about.html#how-it-works">How It Works</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 LocalKart. All rights reserved.</p>
+                <p>Discover Local. Shop Better.</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
