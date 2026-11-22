@@ -1785,3 +1785,158 @@ a {
 .category-card:hover .category-arrow span {
     color: #ffffff !important;
 }
+
+
+
+
+
+/* LOCALKART HERO IMAGE — SQUARE FIT FIX */
+
+.hero-visual {
+    width: 100%;
+    max-width: 650px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+}
+
+/* TABLET */
+@media (max-width: 1000px) {
+    .hero-image {
+        height: auto;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 760px) {
+    .hero-visual {
+        width: min(100%, 500px);
+    }
+
+    .hero-image {
+        height: auto;
+        border-radius: 18px;
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 520px) {
+    .hero-image {
+        height: auto;
+        border-radius: 15px;
+    }
+}
+
+/* Hero Heading - Both Lines Black */
+.hero-content h1,
+.hero-content h1 span {
+    color: #000000 !important;
+}
+
+
+
+
+
+
+
+/* =========================================
+   LOCALKART — PREMIUM HERO DESIGN
+========================================= */
+
+/* HERO LAYOUT */
+.hero-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 45px;
+}
+
+/* HERO HEADING — BOTH BLACK */
+.hero-content h1,
+.hero-content h1 span {
+    color: #000000 !important;
+}
+
+/* HERO IMAGE AREA */
+.hero-visual {
+    position: relative;
+    width: 100%;
+    max-width: 680px;
+    margin-inline: auto;
+    overflow: visible;
+}
+
+/* HERO IMAGE */
+.hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(18, 61, 48, 0.13);
+}
+
+/* IMAGE NOTE */
+.hero-image-note {
+    left: -22px;
+    bottom: 28px;
+    z-index: 2;
+}
+
+/* TABLET */
+@media (max-width: 1000px) {
+    .hero-grid {
+        grid-template-columns: 1fr 0.95fr;
+        gap: 25px;
+    }
+
+    .hero-visual {
+        max-width: 520px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 760px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .hero-visual {
+        width: min(100%, 540px);
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        border-radius: 20px;
+    }
+
+    .hero-image-note {
+        left: 12px;
+        bottom: 18px;
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 520px) {
+    .hero-visual {
+        width: 100%;
+    }
+
+    .hero-image {
+        border-radius: 15px;
+    }
+}
